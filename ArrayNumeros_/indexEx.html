@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Exercicio Array</title>
+        <style>
+            #caixa_principal{
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;
+                height:800px;
+                background-color: aqua;
+            }
+
+            #superior{
+                height: 200px;
+                width: inherit;
+                background-color: yellow;
+
+            }
+
+            #inferior{
+                width:inherit;
+                height:600px;
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="caixa_principal">
+            <div id="superior">
+                
+                        <label>
+                                Valor Mínimo:
+                                <input type="text" id="minimo"/> 
+                          </label>
+                          <label>
+                                Valor Máximo:
+                                <input type="text" id='maximo'/>
+                          </label>  
+               
+            </div>
+
+            <div id="inferior">
+                    <input type="button" value="Pares" id='pares'/> 
+                    <input type="button" value="Fatorial" id='fatorial'/> 
+                    <input type="button" value="Fibonacci" id='fibonacci'/>
+                    <input type="button" value="Primo" id='primo'/>
+                    <textarea id="resultado" rows="10" >
+                        
+                    
+                    </textarea> 
+            </div>
+        </div>
+        <script src="scriptEx.js"></script>
+    </body>
+</html>
