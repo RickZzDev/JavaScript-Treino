@@ -1,0 +1,66 @@
+
+
+<html>
+    <head>
+        <title>
+        
+        </title>
+        
+        <style>
+            h1{
+                margin-left: -50px;
+            }
+            
+            #select_moeda{
+                width:110px;
+                margin-left: 9px;
+            }
+            
+            #moeda_txt_origem{
+                width: 100px;
+                margin-left: 28px;
+            }
+            
+            #select_destino{
+                width: 100px;
+            }
+            
+            #resultado{
+                width: 100px;
+                margin-left: 30px;
+            }
+            
+            #container{
+                width: 390px;
+                height: 350px;
+                background-color: aqua;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left:75px;
+                box-sizing: border-box;
+            }
+        </style>
+       
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1>Conversão de moedas</h1>
+            De<select id="select_moeda">
+                <option>Real</option>
+            </select><br><br>
+            <input type="text" id="moeda_txt_origem"><br><br>
+            Para<select id="select_destino">
+                <option>escolha</option>
+                <option id ="opt" value="USD">Dollar</option>
+                <option id ="opt" value="ARS">Peso Argentino</option>
+                <option id ="opt" value="BTC">Bitcoin</option>
+                <option id ="opt" value="EUR">Euro</option>
+                <option id ="opt" value="GBP">Pound Sterling</option>
+            </select><br><br>
+            <input type="text" id="resultado">
+            <input type="button" value="Calcular" id="Calcular">
+        </div>
+         <script src="script.js"></script>
+    </body>
+</html>

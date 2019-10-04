@@ -6,37 +6,48 @@ const $automatico = document.getElementById('automatico')
 
 
 const ligaCor = (cor) => {
+  
+    clearInterval(intervalo)
     $img.src = "./img/" + cor + ".png"
+
+   
 }
 
+
+
 var a=0
-const automatico = () =>{
-    
+var automatico = () =>{
+     
         if(a==0){
     
-            ligaCor("vermelho")
+            $img.src = "./img/vermelho.png"
             a=1
         }else if(a == 1){
-            ligaCor("verde")
+            $img.src = "./img/verde.png"
             a=2
         }else if(a == 2){
-            ligaCor("amarelo")
-            a = 0
-             
-            
+            $img.src = "./img/amarelo.png"
+            a = 0   
         }
         
-    
-        
-   
-        
-   
+ 
 }
+
+var intervalo = 0;
+const func = () =>{
+    clearInterval(intervalo)
+     intervalo = setInterval(automatico, 1000)
+}
+
+
+
 
 
 
 $amarelo.addEventListener("click",() => ligaCor("amarelo"))
 $vermelho.addEventListener("click",() => ligaCor("vermelho"))
 $verde.addEventListener("click",() => ligaCor("verde"))
-$automatico.addEventListener("click",()=> setInterval(automatico,3000));
+$automatico.addEventListener("click",()=> func());
+
+
 
